@@ -1,0 +1,2 @@
+# genNames
+Generate random names
