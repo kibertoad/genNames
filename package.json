@@ -1,0 +1,96 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "gennames",
+        "scope": null,
+        "escapedName": "gennames",
+        "name": "gennames",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/home/mike/micron"
+    ]
+  ],
+  "_from": "gennames@latest",
+  "_id": "gennames@0.0.2",
+  "_inCache": true,
+  "_location": "/gennames",
+  "_nodeVersion": "7.4.0",
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/gennames-0.0.2.tgz_1486840362960_0.7756273953709751"
+  },
+  "_npmUser": {
+    "name": "themikefuller",
+    "email": "mike@themike.org"
+  },
+  "_npmVersion": "4.0.5",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "gennames",
+    "scope": null,
+    "escapedName": "gennames",
+    "name": "gennames",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/gennames/-/gennames-0.0.2.tgz",
+  "_shasum": "02c58998a59575e84772af59923d9f3f28eaa260",
+  "_shrinkwrap": null,
+  "_spec": "gennames",
+  "_where": "/home/mike/micron",
+  "author": {
+    "name": "Mike Fuller"
+  },
+  "bugs": {
+    "url": "https://github.com/themikefuller/gennames/issues"
+  },
+  "dependencies": {},
+  "description": "Generate random names",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "02c58998a59575e84772af59923d9f3f28eaa260",
+    "tarball": "https://registry.npmjs.org/gennames/-/gennames-0.0.2.tgz"
+  },
+  "gitHead": "fa234493c1d7aff82dc3a5c83da0fdd765e2e9a5",
+  "homepage": "https://github.com/themikefuller/gennames#readme",
+  "keywords": [
+    "generate",
+    "random",
+    "names",
+    "surnames",
+    "male",
+    "female",
+    "by",
+    "gender",
+    "people",
+    "person",
+    "name"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "themikefuller",
+      "email": "mike@themike.org"
+    }
+  ],
+  "name": "gennames",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/themikefuller/gennames.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.0.2"
+}
