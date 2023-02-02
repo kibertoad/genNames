@@ -1,6 +1,6 @@
-const surnames = require('./surnames.json')
-const females = require('./females.json')
-const males = require('./males.json')
+import surnames from './surnames.json'
+import females from './females.json'
+import males from './males.json'
 
 export type GeneratedName = {
   first: string
@@ -31,7 +31,7 @@ export function genNames(options: GenNamesOptions = {}): GeneratedName[] {
     count = options.count
   }
   let surname = false
-  let lpool
+  let lpool: string[] = []
   if (options.surname) {
     surname = true
     lpool = surnames.names

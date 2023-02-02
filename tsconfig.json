@@ -9,6 +9,7 @@
     "types": ["node"],
     "strict": true,
     "moduleResolution": "node",
+    "resolveJsonModule": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
@@ -19,7 +20,7 @@
     "importHelpers": false,
     "baseUrl": ".",
     "allowSyntheticDefaultImports": true,
-    "esModuleInterop": false,
+    "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true
   },
   "exclude": ["node_modules", "dist", "test.ts"]
