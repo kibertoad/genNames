@@ -1,6 +1,7 @@
 {
-  "name": "@kibertoad/gennames",
+  "name": "generate-human-names",
   "version": "1.0.0",
+  "private": false,
   "author": {
     "name": "Mike Fuller"
   },
