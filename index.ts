@@ -2,13 +2,18 @@ const surnames = require('./surnames.json')
 const females = require('./females.json')
 const males = require('./males.json')
 
+export type GeneratedName = {
+  first: string
+  last?: string
+}
+
 export type GenNamesOptions = {
   gender?: 'male' | 'female' | false
   count?: number
   surname?: boolean
 }
 
-export function genNames(options: GenNamesOptions = {}) {
+export function genNames(options: GenNamesOptions = {}): GeneratedName[] {
   const gpool: string[] = []
   if (options.gender) {
     if (options.gender.toLowerCase() == 'female') {
@@ -31,23 +36,26 @@ export function genNames(options: GenNamesOptions = {}) {
     surname = true
     lpool = surnames.names
   }
-  const names = []
+  const names: GeneratedName[] = []
   let x = 0
   while (x < count) {
     const rand = Math.floor(Math.random() * gpool.length)
-    const name: Record<string, any> = {}
-    name.first = gpool[rand].toLowerCase()
-    name.first = name.first.split('')
-    name.first[0] = name.first[0].toUpperCase()
-    name.first = name.first.join('')
+    let tempFirst = gpool[rand].toLowerCase()
+    let tempFirstArr = tempFirst.split('')
+    tempFirstArr[0] = tempFirstArr[0].toUpperCase()
+    const resolvedFirst = tempFirstArr.join('')
+    let resolvedLast
     if (surname) {
       const randl = Math.floor(Math.random() * lpool.length)
-      name.last = lpool[randl].toLowerCase()
-      name.last = name.last.split('')
-      name.last[0] = name.last[0].toUpperCase()
-      name.last = name.last.join('')
+      let tempLast = lpool[randl].toLowerCase()
+      let tempLastArr = tempLast.split('')
+      tempLastArr[0] = tempLastArr[0].toUpperCase()
+      resolvedLast = tempLastArr.join('')
     }
-    names.push(name)
+    names.push({
+      first: resolvedFirst,
+      last: resolvedLast
+    })
     x++
   }
   return names
